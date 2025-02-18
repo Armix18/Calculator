@@ -1,0 +1,43 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    /*text-align: center;*/
+    align-items: center;
+}
+
+.calculator{
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    background-color: rgba(173, 151, 196, 0.87);
+    flex-direction: column;
+}
+
+button{
+    padding: 30px;
+    font-size: 25px;
+    background-color: rgb(237, 233, 238);
+}
+
+.row {
+    display: flex;
+    gap: 13px;
+}
+
+.delete {
+    flex-grow: 3;
+}
+
+.zero {
+    flex-grow: 1;
+}
+
+.visualizer {
+    font-size: 50px;
+    /*background-color: rgb(241, 241, 241);*/
+    
+    height: 58px;
+}
+
