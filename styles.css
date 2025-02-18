@@ -1,3 +1,9 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -5,39 +11,64 @@
     margin: 0 auto;
     /*text-align: center;*/
     align-items: center;
+    padding-top: 110px;
+
 }
 
 .calculator{
     display: flex;
     padding: 30px;
-    gap: 20px;
-    background-color: rgba(173, 151, 196, 0.87);
+    gap: 10px;
+    background-color: rgb(141 117 147);
     flex-direction: column;
+    border: 2px solid black;
+    color: #ffffff;
+    box-shadow: -4px 8px 4px 0 rgba(169, 119, 175, 0.521);
 }
 
 button{
-    padding: 30px;
+    padding: 20px 30px;
     font-size: 25px;
-    background-color: rgb(237, 233, 238);
+    background-color: rgb(181 156 187);
+    flex: 1;
+    border: 1.2px solid #ffffff;
+    border-radius: 4px;
+    color: #fcfcfc;
+}
+
+button:hover{
+    background-color: rgb(140, 122, 145);
+    color: #000;
 }
 
 .row {
     display: flex;
-    gap: 13px;
+    gap: 10px;
 }
 
 .delete {
-    flex-grow: 3;
+    flex: 10;
 }
 
-.zero {
-    flex-grow: 1;
+.equal {
+    flex: 7;
+}
+
+.ce {
+    padding: 20px 21px;
+    font-size: 22px;
+}
+
+.plus {
+    padding: 20px 29px;
 }
 
 .visualizer {
-    font-size: 50px;
-    /*background-color: rgb(241, 241, 241);*/
-    
+    font-size: 50px;    
     height: 58px;
 }
 
+.point:disabled {
+    color: black;
+    border: 1px solid black
+}
